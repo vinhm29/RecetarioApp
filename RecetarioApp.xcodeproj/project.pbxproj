@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1984C028569E3C0083769D /* RecetaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1984BF28569E3C0083769D /* RecetaCard.swift */; };
+		4D5A17D12851302E00317243 /* RectangleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A17D02851302E00317243 /* RectangleImage.swift */; };
+		4D6A5F512724B97700EF5DF8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A5F502724B97700EF5DF8 /* PageViewController.swift */; };
+		4D6A5F552724BE5900EF5DF8 /* DestacadoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A5F542724BE5900EF5DF8 /* DestacadoCard.swift */; };
+		4D6A5F572724CB7B00EF5DF8 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A5F562724CB7B00EF5DF8 /* PageView.swift */; };
+		4D9C460B2856C08800687C24 /* RecetarioCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C460A2856C08800687C24 /* RecetarioCardList.swift */; };
+		4DB738AE2723ADF700778220 /* RecetarioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB738AD2723ADF700778220 /* RecetarioRow.swift */; };
+		4DB738B02723B88200778220 /* RecetarioList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB738AF2723B88200778220 /* RecetarioList.swift */; };
+		4DB738B22723B9E400778220 /* RecetarioDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB738B12723B9E400778220 /* RecetarioDetail.swift */; };
+		4DDEF6662730E6AC00CA1143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDEF6652730E6AC00CA1143 /* LaunchScreen.storyboard */; };
+		4DE5ACD02725FF920050FC08 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5ACCF2725FF920050FC08 /* PageControl.swift */; };
+		4DEEADDF2723834B00EC880E /* RecetarioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEEADDE2723834B00EC880E /* RecetarioAppApp.swift */; };
+		4DEEADE12723834B00EC880E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEEADE02723834B00EC880E /* ContentView.swift */; };
+		4DEEADE32723835000EC880E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEEADE22723835000EC880E /* Assets.xcassets */; };
+		4DEEADE62723835000EC880E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEEADE52723835000EC880E /* Preview Assets.xcassets */; };
+		4DEEADED27238BB700EC880E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEEADEC27238BB700EC880E /* CircleImage.swift */; };
+		4DEEADF22723A46600EC880E /* Recetas.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DEEADF12723A46600EC880E /* Recetas.json */; };
+		4DEEADF42723A4AE00EC880E /* Recetario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEEADF32723A4AD00EC880E /* Recetario.swift */; };
+		4DEEADF62723AB9900EC880E /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEEADF52723AB9900EC880E /* ModelData.swift */; };
+		4DFEEFEB2724810800F08DA1 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEEFEA2724810800F08DA1 /* FavoriteButton.swift */; };
+		4DFEEFF02724881200F08DA1 /* CategoriaHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEEFEF2724881200F08DA1 /* CategoriaHome.swift */; };
+		4DFEEFF227248C5700F08DA1 /* CategoriaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEEFF127248C5700F08DA1 /* CategoriaRow.swift */; };
+		4DFEEFF427248C9700F08DA1 /* CategoriaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEEFF327248C9700F08DA1 /* CategoriaItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D1984BF28569E3C0083769D /* RecetaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaCard.swift; sourceTree = "<group>"; };
+		4D5A17D02851302E00317243 /* RectangleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleImage.swift; sourceTree = "<group>"; };
+		4D6A5F502724B97700EF5DF8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4D6A5F542724BE5900EF5DF8 /* DestacadoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestacadoCard.swift; sourceTree = "<group>"; };
+		4D6A5F562724CB7B00EF5DF8 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		4D9C460A2856C08800687C24 /* RecetarioCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioCardList.swift; sourceTree = "<group>"; };
+		4DB738AD2723ADF700778220 /* RecetarioRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioRow.swift; sourceTree = "<group>"; };
+		4DB738AF2723B88200778220 /* RecetarioList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioList.swift; sourceTree = "<group>"; };
+		4DB738B12723B9E400778220 /* RecetarioDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioDetail.swift; sourceTree = "<group>"; };
+		4DDEF6652730E6AC00CA1143 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DE5ACCF2725FF920050FC08 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		4DEEADDB2723834B00EC880E /* RecetarioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecetarioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEEADDE2723834B00EC880E /* RecetarioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioAppApp.swift; sourceTree = "<group>"; };
+		4DEEADE02723834B00EC880E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DEEADE22723835000EC880E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DEEADE52723835000EC880E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DEEADEC27238BB700EC880E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		4DEEADF12723A46600EC880E /* Recetas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recetas.json; sourceTree = "<group>"; };
+		4DEEADF32723A4AD00EC880E /* Recetario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recetario.swift; sourceTree = "<group>"; };
+		4DEEADF52723AB9900EC880E /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		4DFEEFEA2724810800F08DA1 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		4DFEEFEF2724881200F08DA1 /* CategoriaHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaHome.swift; sourceTree = "<group>"; };
+		4DFEEFF127248C5700F08DA1 /* CategoriaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaRow.swift; sourceTree = "<group>"; };
+		4DFEEFF327248C9700F08DA1 /* CategoriaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DEEADD82723834B00EC880E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D6A5F4F2724B93500EF5DF8 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A5F502724B97700EF5DF8 /* PageViewController.swift */,
+				4D6A5F562724CB7B00EF5DF8 /* PageView.swift */,
+				4DE5ACCF2725FF920050FC08 /* PageControl.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		4DEEADD22723834B00EC880E = {
+			isa = PBXGroup;
+			children = (
+				4DEEADDD2723834B00EC880E /* RecetarioApp */,
+				4DEEADDC2723834B00EC880E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DEEADDC2723834B00EC880E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DEEADDB2723834B00EC880E /* RecetarioApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DEEADDD2723834B00EC880E /* RecetarioApp */ = {
+			isa = PBXGroup;
+			children = (
+				4DEEADDE2723834B00EC880E /* RecetarioAppApp.swift */,
+				4DDEF6652730E6AC00CA1143 /* LaunchScreen.storyboard */,
+				4DEEADEE27239DFE00EC880E /* Views */,
+				4DEEADEF27239E1400EC880E /* Model */,
+				4DEEADF027239E2600EC880E /* Resources */,
+				4DEEADE22723835000EC880E /* Assets.xcassets */,
+				4DEEADE42723835000EC880E /* Preview Content */,
+			);
+			path = RecetarioApp;
+			sourceTree = "<group>";
+		};
+		4DEEADE42723835000EC880E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DEEADE52723835000EC880E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DEEADEE27239DFE00EC880E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DEEADE02723834B00EC880E /* ContentView.swift */,
+				4D6A5F4F2724B93500EF5DF8 /* PageView */,
+				4DFEEFEE272487DB00F08DA1 /* Categorias */,
+				4DFEEFEC2724818300F08DA1 /* Recetario */,
+				4DFEEFED2724818D00F08DA1 /* Helpers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DEEADEF27239E1400EC880E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DEEADF32723A4AD00EC880E /* Recetario.swift */,
+				4DEEADF52723AB9900EC880E /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DEEADF027239E2600EC880E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DEEADF12723A46600EC880E /* Recetas.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4DFEEFEC2724818300F08DA1 /* Recetario */ = {
+			isa = PBXGroup;
+			children = (
+				4DB738AF2723B88200778220 /* RecetarioList.swift */,
+				4D9C460A2856C08800687C24 /* RecetarioCardList.swift */,
+				4DB738B12723B9E400778220 /* RecetarioDetail.swift */,
+				4DB738AD2723ADF700778220 /* RecetarioRow.swift */,
+			);
+			path = Recetario;
+			sourceTree = "<group>";
+		};
+		4DFEEFED2724818D00F08DA1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEEFEA2724810800F08DA1 /* FavoriteButton.swift */,
+				4DEEADEC27238BB700EC880E /* CircleImage.swift */,
+				4D5A17D02851302E00317243 /* RectangleImage.swift */,
+				4D6A5F542724BE5900EF5DF8 /* DestacadoCard.swift */,
+				4D1984BF28569E3C0083769D /* RecetaCard.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4DFEEFEE272487DB00F08DA1 /* Categorias */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEEFEF2724881200F08DA1 /* CategoriaHome.swift */,
+				4DFEEFF127248C5700F08DA1 /* CategoriaRow.swift */,
+				4DFEEFF327248C9700F08DA1 /* CategoriaItem.swift */,
+			);
+			path = Categorias;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DEEADDA2723834B00EC880E /* RecetarioApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DEEADE92723835000EC880E /* Build configuration list for PBXNativeTarget "RecetarioApp" */;
+			buildPhases = (
+				4DEEADD72723834B00EC880E /* Sources */,
+				4DEEADD82723834B00EC880E /* Frameworks */,
+				4DEEADD92723834B00EC880E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecetarioApp;
+			productName = RecetarioApp;
+			productReference = 4DEEADDB2723834B00EC880E /* RecetarioApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DEEADD32723834B00EC880E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					4DEEADDA2723834B00EC880E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 4DEEADD62723834B00EC880E /* Build configuration list for PBXProject "RecetarioApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DEEADD22723834B00EC880E;
+			productRefGroup = 4DEEADDC2723834B00EC880E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DEEADDA2723834B00EC880E /* RecetarioApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DEEADD92723834B00EC880E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEEADE62723835000EC880E /* Preview Assets.xcassets in Resources */,
+				4DDEF6662730E6AC00CA1143 /* LaunchScreen.storyboard in Resources */,
+				4DEEADF22723A46600EC880E /* Recetas.json in Resources */,
+				4DEEADE32723835000EC880E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DEEADD72723834B00EC880E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEEADF42723A4AE00EC880E /* Recetario.swift in Sources */,
+				4DB738B22723B9E400778220 /* RecetarioDetail.swift in Sources */,
+				4DB738B02723B88200778220 /* RecetarioList.swift in Sources */,
+				4DFEEFEB2724810800F08DA1 /* FavoriteButton.swift in Sources */,
+				4DFEEFF427248C9700F08DA1 /* CategoriaItem.swift in Sources */,
+				4DFEEFF02724881200F08DA1 /* CategoriaHome.swift in Sources */,
+				4DEEADE12723834B00EC880E /* ContentView.swift in Sources */,
+				4DEEADF62723AB9900EC880E /* ModelData.swift in Sources */,
+				4D6A5F552724BE5900EF5DF8 /* DestacadoCard.swift in Sources */,
+				4D5A17D12851302E00317243 /* RectangleImage.swift in Sources */,
+				4DEEADDF2723834B00EC880E /* RecetarioAppApp.swift in Sources */,
+				4D1984C028569E3C0083769D /* RecetaCard.swift in Sources */,
+				4DE5ACD02725FF920050FC08 /* PageControl.swift in Sources */,
+				4D6A5F572724CB7B00EF5DF8 /* PageView.swift in Sources */,
+				4DFEEFF227248C5700F08DA1 /* CategoriaRow.swift in Sources */,
+				4D6A5F512724B97700EF5DF8 /* PageViewController.swift in Sources */,
+				4D9C460B2856C08800687C24 /* RecetarioCardList.swift in Sources */,
+				4DEEADED27238BB700EC880E /* CircleImage.swift in Sources */,
+				4DB738AE2723ADF700778220 /* RecetarioRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4DEEADE72723835000EC880E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DEEADE82723835000EC880E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DEEADEA2723835000EC880E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecetarioApp/Preview Content\"";
+				DEVELOPMENT_TEAM = J97ASS5N9P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tipacti.RecetarioApp;
+				PRODUCT_NAME = RecetarioApp;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DEEADEB2723835000EC880E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecetarioApp/Preview Content\"";
+				DEVELOPMENT_TEAM = J97ASS5N9P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tipacti.RecetarioApp;
+				PRODUCT_NAME = RecetarioApp;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DEEADD62723834B00EC880E /* Build configuration list for PBXProject "RecetarioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DEEADE72723835000EC880E /* Debug */,
+				4DEEADE82723835000EC880E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DEEADE92723835000EC880E /* Build configuration list for PBXNativeTarget "RecetarioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DEEADEA2723835000EC880E /* Debug */,
+				4DEEADEB2723835000EC880E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DEEADD32723834B00EC880E /* Project object */;
+}

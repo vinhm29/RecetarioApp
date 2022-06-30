@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Ají colorado o panca",
+        "porcion": "Molido especial",
+        "category": "Especeria",
+        "id": 1001,
+        "isFeatured": false,
+        "isFavorite": false,
+        "ingredientes": "- 100 gr. de ají colorado sin pepa\n- 2 cabezas de ajo entero\n- 2 ramas de romero seco o fresco\n- 2 cuch. de orégano seco\n- 5 cuch. de comino entero\n- 3 cuch. de pimienta negra entera\n- 3 cuch. de tomillo entero\n- 5 cuch. de achiote entero\n- Sal al gusto",
+        "preparacion": "1. Lavar el ají colorado y remojarlo en agua hirviendo hasta que ésta se enfríe.\n2. En una sartén, tostar el comido, pimienta, romero, orégano, achiote y el tomillo. Una vez tostados licuar con el ajo y un poco de agua.\n3. Luego agregar poco a poco el ají colorado con una taza de agua, si está muy espeso agregar más agua cuidando de que no pierda la consistencia, se agrega sal al gusto.\n4. Se reserva en un recipiente con tapa y refrigerarlo.",
+        "imageName": "Aji_panca"
+    },
+    {
+        "name": "Ají amarillo molido",
+        "porcion": "Al momento",
+        "category": "Especeria",
+        "id": 1002,
+        "isFeatured": false,
+        "isFavorite": false,
+        "ingredientes": "- 5 ají verdes\n- 4 dientes de ajo\n- 2 cuch. de orégano seco\n- Sal al gusto",
+        "preparacion": "1. Se quita las venas del ají.\n2. Se lavan bien y se ponen a cocinar por 15 minutos.\n3. Se quita la cáscara del ají.\n4. Se licua con los ajos, el orégano y 5 cucharadas de agua.\n6. Se reserva en un recipiente de vidrio.",
+        "imageName": "Aji_amarillo"
+    },
+    {
+        "name": "Culantro molido",
+        "porcion": "Al momento ",
+        "category": "Especeria",
+        "id": 1003,
+        "isFeatured": false,
+        "isFavorite": false,
+        "ingredientes": "- S/.1 de culantro entero fresco\n- S/.0.50 espinaca fresca\n- 5 dientes de ajo\n- 2 cuch. de orégano entero seco\n- 2 cuch. de tomillo entero seco\n- 2 ají verdes frescos\n- Sal al gusto",
+        "preparacion": "1. Cortar la raíz del culantro y lavarlo bien.\n2. Lavar las hojas de la espinaca.\n3. Despepitar el ají verde y lavarlo.\n4. Pasar por agua hirviendo todos los ingredientes antes mencinados.\n5. Licuar con el ajo, orégano, tomillo y 1/4 de agua hervida.\n6. Sal al gusto.\n7. Reservar en un recipiente de vidrio.",
+        "imageName": "Culantro_molido"
+    },
+    {
+        "name": "Pollo a la olla",
+        "porcion": "Para 6 personas",
+        "category": "Almuerzo",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": false,
+        "ingredientes": "- 6 presas de pollo\n- 4 papas amarillas\n- 1 rama de romero seco\n- 2 cuch. de vinagre de vino\n- 1 cuch. de pimienta molida\n- 1 cuch. de comino molido\n- 1 cuch. de ajo molido o  picado finamente\n- 4 cuch. de ají colorado molido\n- Sal al gusto",
+        "preparacion": "1. Se lava las presas de pollo sin piel.\n2. En un recipiente colocar las presas, agregando los ingredientes, mezclarlos bien y dejando reposar por 30 minutos.\n3. Luego en una olla colocar las presas con un poco de jugo y ponerlo al fuego por 20 minutos.\n4. Agregamos las papas peladas y cortadas en rodajas con el resto de la especería donde estuvo curtiendo el pollo, probar si esta bien de sal o agregar al gusto.\n5. Dejamos que termine de cocinar.\n6. Servir con arroz blanco, arroz integral o acompañado de una ensalada de verduras.",
+        "imageName": "PolloOlla"
+    },
+    {
+        "name": "Ají de Gallina",
+        "porcion": "Para 5 personas",
+        "category": "Almuerzo",
+        "id": 1005,
+        "isFeatured": true,
+        "isFavorite": true,
+        "ingredientes": "- 1/2 kg de lentejitas\n- 3/4 kg de arroz",
+        "preparacion": "1. Freir el ajo con la cebolla. Agregar 3/4 de taza de agua. Despues agregar el arroz y dejar que se cocine por 25 min. Hervir la lentejita con ajo y tomate picado en cuadraditos. Agregar sal al gusto.",
+        "imageName": "AjiGallina"
+    },
+]
