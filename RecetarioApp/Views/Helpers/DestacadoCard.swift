@@ -11,11 +11,19 @@ struct DestacadoCard: View {
     var recetario: Recetario
     
     var body: some View {
-        recetario.featureImage?
-            .resizable()
-            .aspectRatio(3 / 2, contentMode: .fit)
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-            .overlay(TextOverlay(recetario: recetario))
+        if let featureImage = recetario.featureImage {
+            featureImage
+                .resizable()
+                .aspectRatio(3 / 2, contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .overlay(TextOverlay(recetario: recetario))
+        } else {
+            recetario.image
+                .resizable()
+                .aspectRatio(3 / 2, contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .overlay(TextOverlay(recetario: recetario))
+        }
     }
 }
 
@@ -24,15 +32,16 @@ struct TextOverlay: View {
     
     var gradient: LinearGradient {
         LinearGradient(
-            gradient: Gradient(
-                colors: [Color.black.opacity(0.6), Color.black.opacity(0)]),
+            colors: [.black.opacity(0.6), .black.opacity(0)],
             startPoint: .bottom,
-            endPoint: .center)
+            endPoint: .center
+        )
     }
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            RoundedRectangle(cornerRadius: 20, style: .continuous).fill(gradient)
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .fill(gradient)
             VStack(alignment: .leading) {
                 Text(recetario.name)
                     .font(.title)
@@ -41,12 +50,15 @@ struct TextOverlay: View {
             }
             .padding()
         }
-        .foregroundColor(.white)
+        .foregroundStyle(.white)
     }
 }
 
-struct DestacadoCard_Previews: PreviewProvider {
-    static var previews: some View {
-        DestacadoCard(recetario: ModelData().features[0])
+#Preview {
+    let model = ModelData()
+    return Group {
+        if let first = model.features.first {
+            DestacadoCard(recetario: first)
+        }
     }
 }

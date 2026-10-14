@@ -8,48 +8,38 @@
 import SwiftUI
 
 struct RecetarioCardList: View {
-    @EnvironmentObject var modelData: ModelData
-    var recetario: [Recetario] = ModelData().recetas
+    @Environment(ModelData.self) private var modelData
     @State private var busqueda = ""
     
+    private var filteredRecetas: [Recetario] {
+        if busqueda.trimmingCharacters(in: .whitespaces).isEmpty {
+            return modelData.recetas
+        } else {
+            return modelData.recetas.filter {
+                $0.name.localizedCaseInsensitiveContains(busqueda)
+            }
+        }
+    }
+    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    /*HStack {
-                        Text("\(recetario.count) \(recetario.count > 1 ? "recetas" : "receta")")
-                            .font(.headline)
-                            .fontWeight(.medium)
-                            .opacity(0.7)
-                        
-                        Spacer()
-                    }*/
-                    
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 15)], spacing: 15) {
-                        ForEach(busqueda == "" ? recetario: recetario.filter{ $0.name.contains(busqueda) }) { recetario in
-                            NavigationLink(destination: RecetarioDetail(recetario: recetario)) {
-                                RecetaCard(recetario: recetario)
-                            }
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 15)], spacing: 15) {
+                    ForEach(filteredRecetas) { receta in
+                        NavigationLink(destination: RecetarioDetail(recetario: receta)) {
+                            RecetaCard(recetario: receta)
                         }
-                        .padding(.top)
                     }
-                    .padding(.top)
                 }
-                .padding(.horizontal)
+                .padding()
             }
             .navigationTitle("Recetas")
+            .searchable(text: $busqueda, prompt: "Buscar recetas")
         }
-        .searchable(text: $busqueda)
-        .navigationViewStyle(StackNavigationViewStyle())
-        .padding(0)
     }
 }
 
-struct RecetarioCardList_Previews: PreviewProvider {
-    static let modelData = ModelData()
-    
-    static var previews: some View {
-        RecetarioCardList()
-            .environmentObject(ModelData())
-    }
+#Preview {
+    RecetarioCardList()
+        .environment(ModelData())
 }

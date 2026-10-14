@@ -15,13 +15,11 @@ struct CircleImage: View {
             .resizable()
             .aspectRatio(3 / 2, contentMode: .fit)
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.white, lineWidth: 4))
+            .overlay(Circle().stroke(.white, lineWidth: 4))
             .shadow(radius: 7)
     }
 }
 
-struct CircleImage_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleImage(image: Image("Lentejitas"))
-    }
+#Preview {
+    CircleImage(image: Image("Lentejitas"))
 }

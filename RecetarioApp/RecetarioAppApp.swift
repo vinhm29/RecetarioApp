@@ -9,21 +9,20 @@ import SwiftUI
 
 @main
 struct RecetarioAppApp: App {
-    @StateObject private var modelData = ModelData()
-    @Environment(\.scenePhase) var scenePhase
+    @State private var modelData = ModelData()
+    @Environment(\.scenePhase) private var scenePhase
     
     init() {
-        //Aquí se inicializan los FRAMEWORKS que se necesitan
         print("La aplicación se ha lanzado")
     }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(modelData)
+                .environment(modelData)
         }
-        .onChange(of: scenePhase) { newScenePhase in
-            switch newScenePhase {
+        .onChange(of: scenePhase) { oldPhase, newPhase in
+            switch newPhase {
             case .active:
                 print("La APP está activa")
             case .background:
@@ -31,7 +30,7 @@ struct RecetarioAppApp: App {
             case .inactive:
                 print("La APP está inactiva")
             @unknown default:
-                print("Valor inexperado")
+                print("Valor inesperado")
             }
         }
     }

@@ -11,9 +11,19 @@ struct CategoriaRow: View {
     var categoriaName: String
     var items: [Recetario]
     
+    private var formattedTitle: String {
+        switch categoriaName {
+        case "Desayuno": return "Desayunos"
+        case "Almuerzo": return "Almuerzos"
+        case "Cena": return "Cenas"
+        case "Especeria": return "Especería"
+        default: return categoriaName.hasSuffix("s") ? categoriaName : categoriaName + "s"
+        }
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text(categoriaName + "s")
+            Text(formattedTitle)
                 .font(.headline)
                 .bold()
                 .padding(.leading, 15)
@@ -21,9 +31,9 @@ struct CategoriaRow: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 2) {
-                    ForEach(items) { Recetario in
-                        NavigationLink(destination: RecetarioDetail(recetario: Recetario)) {
-                            CategoriaItem(recetario: Recetario)
+                    ForEach(items) { recetario in
+                        NavigationLink(destination: RecetarioDetail(recetario: recetario)) {
+                            CategoriaItem(recetario: recetario)
                         }
                     }
                 }
@@ -33,13 +43,14 @@ struct CategoriaRow: View {
     }
 }
 
-struct CategoriaRow_Previews: PreviewProvider {
-    static var recetas = ModelData().recetas
-    
-    static var previews: some View {
-        CategoriaRow(
-            categoriaName: recetas[0].category.rawValue,
-            items: Array(recetas.prefix(4))
-        )
+#Preview {
+    let model = ModelData()
+    return Group {
+        if let first = model.recetas.first {
+            CategoriaRow(
+                categoriaName: first.category.rawValue,
+                items: Array(model.recetas.prefix(4))
+            )
+        }
     }
 }

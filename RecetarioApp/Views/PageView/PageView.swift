@@ -21,9 +21,12 @@ struct PageView<Page: View>: View {
     }
 }
 
-struct PageView_Previews: PreviewProvider {
-    static var previews: some View {
-        PageView(pages: ModelData().features.map { DestacadoCard(recetario: $0) })
-            .aspectRatio(3 / 2, contentMode: .fit)
+#Preview {
+    let model = ModelData()
+    return Group {
+        if !model.features.isEmpty {
+            PageView(pages: model.features.map { DestacadoCard(recetario: $0) })
+                .aspectRatio(3 / 2, contentMode: .fit)
+        }
     }
 }

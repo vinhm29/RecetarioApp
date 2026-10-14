@@ -8,73 +8,84 @@
 import SwiftUI
 
 struct RecetarioList: View {
-    @EnvironmentObject var modelData: ModelData
+    @Environment(ModelData.self) private var modelData
     @State private var showFavoritesOnly = false
     @State private var filter = FilterCategory.Todos
     @State private var busqueda = ""
     
     enum FilterCategory: String, CaseIterable, Identifiable {
         case Todos = "Todos"
-        case Dessayuno = "Desayuno"
+        case Desayuno = "Desayuno"
         case Almuerzo = "Almuerzo"
         case Cena = "Cena"
         case Especeria = "Especeria"
         
         var id: FilterCategory { self }
-    }
-    
-    var filteredRecetas: [Recetario] {
-        modelData.recetas.filter { Recetario in
-            (!showFavoritesOnly || Recetario.isFavorite)
-            && (filter == .Todos || filter.rawValue == Recetario.category.rawValue)
+        
+        var displayName: String {
+            switch self {
+            case .Todos: return "Todos"
+            case .Desayuno: return "Desayunos"
+            case .Almuerzo: return "Almuerzos"
+            case .Cena: return "Cenas"
+            case .Especeria: return "Especería"
+            }
         }
     }
     
-    var title: String {
-        let title = filter == .Todos ? "Recetas" : filter.rawValue + "s"
-        return showFavoritesOnly ? "Favoritos" : title
+    private var filteredRecetas: [Recetario] {
+        modelData.recetas.filter { receta in
+            (!showFavoritesOnly || receta.isFavorite)
+            && (filter == .Todos || filter.rawValue == receta.category.rawValue)
+            && (busqueda.trimmingCharacters(in: .whitespaces).isEmpty || receta.name.localizedCaseInsensitiveContains(busqueda))
+        }
+    }
+    
+    private var title: String {
+        if showFavoritesOnly {
+            return "Favoritos"
+        }
+        return filter == .Todos ? "Recetas" : filter.displayName
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
-                ForEach(busqueda == "" ? filteredRecetas: filteredRecetas.filter{ $0.name.contains(busqueda) }) { Recetario in
-                    NavigationLink(destination: RecetarioDetail(recetario: Recetario)) {
-                        RecetarioRow(recetario: Recetario)
+                LazyVStack(spacing: 10) {
+                    ForEach(filteredRecetas) { receta in
+                        NavigationLink(destination: RecetarioDetail(recetario: receta)) {
+                            RecetarioRow(recetario: receta)
+                        }
+                        .padding(.horizontal, 5)
                     }
-                    .padding(5)
                 }
+                .padding()
             }
-            .padding()
             .navigationTitle(title)
+            .searchable(text: $busqueda, prompt: "Buscar recetas")
             .toolbar {
-                ToolbarItem {
+                ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Picker("Categorías", selection: $filter) {
                             ForEach(FilterCategory.allCases) { categoria in
-                                Text(categoria.rawValue + "s").tag(categoria)
+                                Text(categoria.displayName).tag(categoria)
                             }
                         }
-                        .pickerStyle(InlinePickerStyle())
+                        .pickerStyle(.inline)
                         
                         Toggle(isOn: $showFavoritesOnly) {
                             Label("Solo favoritos", systemImage: "star.fill")
                         }
-                    } label : {
-                        Label("Filter", systemImage: "slider.horizontal.3")
+                    } label: {
+                        Label("Filtrar", systemImage: "slider.horizontal.3")
                     }
                 }
             }
         }
-        .searchable(text: $busqueda)
-        .navigationViewStyle(StackNavigationViewStyle())
-        .padding(0)
     }
 }
 
-struct RecetarioList_Previews: PreviewProvider {
-    static var previews: some View {
-        RecetarioList()
-            .environmentObject(ModelData())
-    }
+#Preview {
+    RecetarioList()
+        .environment(ModelData())
 }

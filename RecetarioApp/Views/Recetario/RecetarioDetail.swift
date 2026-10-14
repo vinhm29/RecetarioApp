@@ -8,72 +8,84 @@
 import SwiftUI
 
 struct RecetarioDetail: View {
-    @EnvironmentObject var modelData: ModelData
+    @Environment(ModelData.self) private var modelData
     var recetario: Recetario
     
-    var recetarioIndex: Int {
-        modelData.recetas.firstIndex(where: { $0.id == recetario.id })!
+    private var recetarioIndex: Int? {
+        modelData.index(of: recetario)
+    }
+    
+    private var currentReceta: Recetario {
+        if let index = recetarioIndex {
+            return modelData.recetas[index]
+        }
+        return recetario
     }
     
     var body: some View {
+        @Bindable var bindableModel = modelData
+        
         ScrollView(.vertical, showsIndicators: false) {
-            RectangleImage(image: recetario.image)
+            RectangleImage(image: currentReceta.image)
                 
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 16) {
                 HStack {
-                    Text(recetario.name)
+                    Text(currentReceta.name)
                         .font(.title)
-                        .foregroundColor(.primary)
+                        .foregroundStyle(.primary)
                         .bold()
                     Spacer()
-                    FavoriteButton(isSet: $modelData.recetas[recetarioIndex].isFavorite)
+                    if let index = recetarioIndex {
+                        FavoriteButton(isSet: $bindableModel.recetas[index].isFavorite)
+                    }
                 }
-                .padding([.trailing, .leading])
+                .padding(.horizontal)
                 
                 HStack {
-                    Text(recetario.porcion)
+                    Text(currentReceta.porcion)
                     Spacer()
-                    Text(recetario.category.rawValue)
+                    Text(currentReceta.category.rawValue)
                 }
                 .font(.subheadline)
-                .foregroundColor(.secondary)
-                .padding([.trailing, .leading])
+                .foregroundStyle(.secondary)
+                .padding(.horizontal)
                     
                 Divider()
                     
                 Text("Ingredientes")
                     .font(.title2)
                     .bold()
-                    .padding()
-                Spacer()
-                Text(recetario.ingredientes)
+                    .padding(.horizontal)
+                
+                Text(currentReceta.ingredientes)
                     .lineSpacing(8.0)
-                    .padding([.trailing, .leading])
+                    .padding(.horizontal)
                     
                 Divider()
                     
                 Text("Preparación")
                     .font(.title2)
                     .bold()
-                    .padding()
-                Spacer()
-                Text(recetario.preparacion)
+                    .padding(.horizontal)
+                
+                Text(currentReceta.preparacion)
                     .lineSpacing(8.0)
-                    .padding([.trailing, .leading])
+                    .padding(.horizontal)
             }
-            .padding()
+            .padding(.vertical)
         }
-        //.navigationTitle(recetario.name)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct RecetarioDetail_Previews: PreviewProvider {
-    static let modelData = ModelData()
-    
-    static var previews: some View {
-        RecetarioDetail(recetario: ModelData().recetas[0])
-            .environmentObject(modelData)
-.previewInterfaceOrientation(.portrait)
+#Preview {
+    let modelData = ModelData()
+    return Group {
+        if let first = modelData.recetas.first {
+            NavigationStack {
+                RecetarioDetail(recetario: first)
+                    .environment(modelData)
+            }
+        }
     }
 }

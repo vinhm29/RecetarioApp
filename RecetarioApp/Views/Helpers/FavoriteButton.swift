@@ -11,17 +11,15 @@ struct FavoriteButton: View {
     @Binding var isSet: Bool
     
     var body: some View {
-        Button(action: {
+        Button {
             isSet.toggle()
-        }) {
+        } label: {
             Image(systemName: isSet ? "star.fill" : "star")
-                .foregroundColor(isSet ? Color.yellow : Color.gray)
+                .foregroundStyle(isSet ? .yellow : .gray)
         }
     }
 }
 
-struct FavoriteButton_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoriteButton(isSet: .constant(true))
-    }
+#Preview {
+    FavoriteButton(isSet: .constant(true))
 }

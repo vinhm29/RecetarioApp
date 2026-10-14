@@ -39,12 +39,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ForEach(ColorScheme.allCases, id: \.self) {
-            ContentView()
-                .environmentObject(ModelData()).preferredColorScheme($0)
-        }
-        .previewInterfaceOrientation(.portrait)
-    }
+#Preview {
+    ContentView()
+        .environment(ModelData())
 }

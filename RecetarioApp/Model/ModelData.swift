@@ -6,10 +6,11 @@
 //
 
 import Foundation
-import Combine
+import Observation
 
-final class ModelData: ObservableObject {
-    @Published var recetas: [Recetario] = load("Recetas.json")
+@Observable
+final class ModelData {
+    var recetas: [Recetario] = load("Recetas.json")
     
     var features: [Recetario] {
         recetas.filter { $0.isFeatured }
@@ -20,6 +21,16 @@ final class ModelData: ObservableObject {
             grouping: recetas,
             by: { $0.category.rawValue }
         )
+    }
+    
+    func index(of recetario: Recetario) -> Int? {
+        recetas.firstIndex(where: { $0.id == recetario.id })
+    }
+    
+    func toggleFavorite(for recetario: Recetario) {
+        if let idx = index(of: recetario) {
+            recetas[idx].isFavorite.toggle()
+        }
     }
 }
 

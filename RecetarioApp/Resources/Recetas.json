@@ -7,7 +7,7 @@
         "isFeatured": false,
         "isFavorite": false,
         "ingredientes": "- 100 gr. de ají colorado sin pepa\n- 2 cabezas de ajo entero\n- 2 ramas de romero seco o fresco\n- 2 cuch. de orégano seco\n- 5 cuch. de comino entero\n- 3 cuch. de pimienta negra entera\n- 3 cuch. de tomillo entero\n- 5 cuch. de achiote entero\n- Sal al gusto",
-        "preparacion": "1. Lavar el ají colorado y remojarlo en agua hirviendo hasta que ésta se enfríe.\n2. En una sartén, tostar el comido, pimienta, romero, orégano, achiote y el tomillo. Una vez tostados licuar con el ajo y un poco de agua.\n3. Luego agregar poco a poco el ají colorado con una taza de agua, si está muy espeso agregar más agua cuidando de que no pierda la consistencia, se agrega sal al gusto.\n4. Se reserva en un recipiente con tapa y refrigerarlo.",
+        "preparacion": "1. Lavar el ají colorado y remojarlo en agua hirviendo hasta que ésta se enfríe.\n2. En una sartén, tostar el comino, pimienta, romero, orégano, achiote y el tomillo. Una vez tostados licuar con el ajo y un poco de agua.\n3. Luego agregar poco a poco el ají colorado con una taza de agua, si está muy espeso agregar más agua cuidando de que no pierda la consistencia, se agrega sal al gusto.\n4. Se reserva en un recipiente con tapa y refrigerarlo.",
         "imageName": "Aji_panca"
     },
     {
@@ -39,7 +39,7 @@
         "id": 1004,
         "isFeatured": true,
         "isFavorite": false,
-        "ingredientes": "- 6 presas de pollo\n- 4 papas amarillas\n- 1 rama de romero seco\n- 2 cuch. de vinagre de vino\n- 1 cuch. de pimienta molida\n- 1 cuch. de comino molido\n- 1 cuch. de ajo molido o  picado finamente\n- 4 cuch. de ají colorado molido\n- Sal al gusto",
+        "ingredientes": "- 6 presas de pollo\n- 4 papas amarillas\n- 1 rama de romero seco\n- 2 cuch. de vinagre de vino\n- 1 cuch. de pimienta molida\n- 1 cuch. de comino molido\n- 1 cuch. de ajo molido o picado finamente\n- 4 cuch. de ají colorado molido\n- Sal al gusto",
         "preparacion": "1. Se lava las presas de pollo sin piel.\n2. En un recipiente colocar las presas, agregando los ingredientes, mezclarlos bien y dejando reposar por 30 minutos.\n3. Luego en una olla colocar las presas con un poco de jugo y ponerlo al fuego por 20 minutos.\n4. Agregamos las papas peladas y cortadas en rodajas con el resto de la especería donde estuvo curtiendo el pollo, probar si esta bien de sal o agregar al gusto.\n5. Dejamos que termine de cocinar.\n6. Servir con arroz blanco, arroz integral o acompañado de una ensalada de verduras.",
         "imageName": "PolloOlla"
     },
@@ -50,8 +50,8 @@
         "id": 1005,
         "isFeatured": true,
         "isFavorite": true,
-        "ingredientes": "- 1/2 kg de lentejitas\n- 3/4 kg de arroz",
-        "preparacion": "1. Freir el ajo con la cebolla. Agregar 3/4 de taza de agua. Despues agregar el arroz y dejar que se cocine por 25 min. Hervir la lentejita con ajo y tomate picado en cuadraditos. Agregar sal al gusto.",
+        "ingredientes": "- 1 pechuga de pollo deshilachada\n- 4 ajíes amarillos licuados\n- 1 cebolla mediana picada en cubitos\n- 2 dientes de ajo picados\n- 4 panes de molde remojados en leche evaporada\n- 1 taza de caldo de pollo\n- 1/2 taza de leche evaporada\n- 50 gr de queso parmesano rallado\n- Sal y pimienta al gusto\n- Huevos duros y aceitunas negras para acompañar",
+        "preparacion": "1. Sancochar la pechuga de pollo en agua con sal; una vez cocida, deshilacharla y reservar el caldo.\n2. Licuar el pan remojado en leche con los ajíes amarillos sofritos.\n3. En una olla dorar la cebolla y el ajo, luego agregar la crema de ají licuada y cocinar a fuego medio.\n4. Incorporar el pollo deshilachado y añadir caldo de pollo poco a poco hasta obtener la consistencia deseada.\n5. Agregar la leche evaporada restante y el queso parmesano, mezclando bien.\n6. Rectificar la sal y pimienta.\n7. Servir con arroz blanco, papas cocidas, huevo duro y aceituna.",
         "imageName": "AjiGallina"
-    },
+    }
 ]
